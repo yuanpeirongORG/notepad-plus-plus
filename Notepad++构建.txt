@@ -79,8 +79,8 @@ notepad-plus-plus-8.6.5
       const TCHAR Notepad_plus_Window::_className[64] = TEXT("Notepad++ 8.6.5 Build By YuanPeirong TianYuan");
       对应头文件static const TCHAR _className[32];修改为static const TCHAR _className[64];
 4、图标替换
-   "D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\icons\npp.ico"                  128X256
+   "D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\icons\npp.ico"                  128X128
    "D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\icons\chameleon.ico"            256X256
    "D:\Code\GitHub\notepad-plus-plus\PowerEditor\installer\images\npp_inst.ico"   128X128
-   全部用256.ico更名后替换
+   //全部用256.ico更名后替换
 5、开启Actions后再提交到Github

@@ -1,0 +1,86 @@
+notepad-plus-plus-8.5.8.zip
+1、构建说明位于"D:\Code\notepad-plus-plus-8.5.8\BUILD.md"
+2、修改"D:\Code\notepad-plus-plus-8.5.8\PowerEditor\src\Notepad_plus.rc"(用Notepad++软件修改，不要用VS2022修改)
+   (1)菜单栏"&?"修改为"&关于天远"
+   (2)关于界面"https://notepad-plus-plus.org/"修改为"http://www.yuanpeirong.com/"
+      (注意要修改源代码2处，可用VS2022查找)
+     （D:\Code\notepad-plus-plus-8.5.8\PowerEditor\src\NppCommands.cpp）
+     （D:\Code\notepad-plus-plus-8.5.8\PowerEditor\src\WinControls\AboutDlg\AboutDlg.cpp）
+   (3)关于界面新增
+      LTEXT           "Build By 袁培荣 天远", IDC_STATIC,85,40,140,11
+      LTEXT           "版权所有(C) 2010-2023 YuanPeirong", IDC_STATIC,85,55,140,11
+      下面其他元素第二坐标高度+15，对话框高度+15
+   (4)CompanyName修改为"www.yuanpeirong.com\0"
+   (5)LegalCopyright修改为"Copyright C 2010-2023 YuanPeirong All Rights Reserved\0"
+3、修改“"D:\Code\notepad-plus-plus-8.5.8\PowerEditor\src\Notepad_plus_Window.cpp"”
+      (1)修改主程序窗口标题栏
+            const TCHAR Notepad_plus_Window::_className[32] = TEXT("Notepad++");修改为
+      const TCHAR Notepad_plus_Window::_className[64] = TEXT("Notepad++ 8.5.8 Build By YuanPeirong TianYuan");
+      对应头文件static const TCHAR _className[32];修改为static const TCHAR _className[64];
+4、Visual Studio 2022打开"D:\Code\notepad-plus-plus-8.5.8\PowerEditor\visual.net\notepadPlus.sln"可进行构建
+5、gcc暂未构建成功
+
+notepad-plus-plus-8.6.1
+1、Github Fork仓库->clone到本地->按如下修改
+2、修改"D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\Notepad_plus.rc"(用Notepad++软件修改，不要用VS2022修改)
+   (1)菜单栏"&?"修改为"&关于天远"
+   (2)关于界面"https://notepad-plus-plus.org/"修改为"http://www.yuanpeirong.com/"
+      (注意要修改源代码2处，可用VS2022查找)
+     （D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\NppCommands.cpp）
+     （D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\WinControls\AboutDlg\AboutDlg.cpp）
+   (3)关于界面新增
+      LTEXT           "Build By 袁培荣 天远", IDC_STATIC,85,40,140,11
+      LTEXT           "版权所有(C) 2010-2024 YuanPeirong", IDC_STATIC,85,55,140,11
+      下面其他元素第二坐标高度+15，对话框高度+15
+   (4)CompanyName修改为"www.yuanpeirong.com\0"
+   (5)LegalCopyright修改为"Copyright C 2010-2024 YuanPeirong All Rights Reserved\0"
+3、修改“"D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\Notepad_plus_Window.cpp"”
+      (1)修改主程序窗口标题栏
+            const TCHAR Notepad_plus_Window::_className[32] = TEXT("Notepad++");修改为
+      const TCHAR Notepad_plus_Window::_className[64] = TEXT("Notepad++ 8.6.1 Build By YuanPeirong TianYuan");
+      对应头文件static const TCHAR _className[32];修改为static const TCHAR _className[64];
+4、图标替换
+   "D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\icons\npp.ico"                  128X256
+   "D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\icons\chameleon.ico"            256X256
+   "D:\Code\GitHub\notepad-plus-plus\PowerEditor\installer\images\npp_inst.ico"   128X128
+   全部用256.ico更名后替换
+5、开启Actions后再提交到Github
+
+
+notepad-plus-plus-8.6.2
+1、此版本直接在天远Notepad++8.6.1基础上拉取原版8.6.2更新
+2、修改“"D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\Notepad_plus_Window.cpp"”
+      (1)修改主程序窗口标题栏
+      const TCHAR Notepad_plus_Window::_className[64] = TEXT("Notepad++ 8.6.2 Build By YuanPeirong TianYuan");
+
+notepad-plus-plus-8.6.4
+1、此版本直接在天远Notepad++8.6.2基础上拉取原版8.6.4更新
+2、修改“"D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\Notepad_plus_Window.cpp"”
+      (1)修改主程序窗口标题栏
+      const TCHAR Notepad_plus_Window::_className[64] = TEXT("Notepad++ 8.6.4 Build By YuanPeirong TianYuan");
+
+notepad-plus-plus-8.6.5
+1、Github 下载8.6.5源代码，删除仓库所有文件，替换为8.6.5源代码
+2、修改"D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\Notepad_plus.rc"(用Notepad++软件修改，不要用VS2022修改)
+   (1)菜单栏"&?"修改为"&关于天远"
+   (2)关于界面"https://notepad-plus-plus.org/"修改为"http://www.yuanpeirong.com/"
+      (注意要修改源代码2处，可用VS2022查找)
+     （D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\NppCommands.cpp）
+     （D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\WinControls\AboutDlg\AboutDlg.cpp）
+   (3)关于界面新增
+      LTEXT           "Build By 袁培荣 天远", IDC_STATIC,85,40,140,11
+      LTEXT           "版权所有(C) 2010-2024 YuanPeirong", IDC_STATIC,85,55,140,11
+      下面其他元素第二坐标高度+15，对话框高度+15
+   (4)CompanyName修改为"www.yuanpeirong.com\0"
+   (5)LegalCopyright修改为"Copyright C 2010-2024 YuanPeirong All Rights Reserved\0"
+3、修改“"D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\Notepad_plus_Window.cpp"”
+      (1)修改主程序窗口标题栏
+            const TCHAR Notepad_plus_Window::_className[32] = TEXT("Notepad++");修改为
+      const TCHAR Notepad_plus_Window::_className[64] = TEXT("Notepad++ 8.6.5 Build By YuanPeirong TianYuan");
+      对应头文件static const TCHAR _className[32];修改为static const TCHAR _className[64];
+4、图标替换
+   "D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\icons\npp.ico"                  128X256
+   "D:\Code\GitHub\notepad-plus-plus\PowerEditor\src\icons\chameleon.ico"            256X256
+   "D:\Code\GitHub\notepad-plus-plus\PowerEditor\installer\images\npp_inst.ico"   128X128
+   全部用256.ico更名后替换
+5、开启Actions后再提交到Github

@@ -18,7 +18,7 @@
 #include <shlwapi.h>
 #include "Notepad_plus_Window.h"
 
-const TCHAR Notepad_plus_Window::_className[32] = TEXT("Notepad++");
+const TCHAR Notepad_plus_Window::_className[64] = TEXT("Notepad++ 8.6.5 Build By YuanPeirong TianYuan");
 HWND Notepad_plus_Window::gNppHWND = NULL;
 
 

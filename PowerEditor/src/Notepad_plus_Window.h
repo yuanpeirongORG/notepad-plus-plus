@@ -118,7 +118,7 @@ private:
 	static LRESULT CALLBACK Notepad_plus_Proc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam);
 	LRESULT runProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam);
 
-	static const TCHAR _className[32];
+	static const TCHAR _className[64];
 	bool _isPrelaunch = false;
 	bool _disablePluginsManager = false;
 

@@ -42,11 +42,11 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE    "CompanyName",        "Don HO don.h@free.fr\0"
+            VALUE    "CompanyName",        "www.yuanpeirong.com\0"
             VALUE    "FileDescription",    "Notepad++\0"
             VALUE    "FileVersion",        VERSION_PRODUCT_VALUE
             VALUE    "InternalName",       "notepad++.exe\0"
-            VALUE    "LegalCopyright",     "Copyleft 1998-2023 by Don HO\0"
+            VALUE    "LegalCopyright",     "Copyright C 2010-2024 YuanPeirong All Rights Reserved\0"
             VALUE    "OriginalFilename",   "notepad++.exe\0"
             VALUE    "ProductName",        "Notepad++\0"
             VALUE    "ProductVersion",     VERSION_PRODUCT_VALUE
@@ -1257,7 +1257,7 @@ BEGIN
         MENUITEM "Recent Window",               IDM_WINDOW_MRU_FIRST, GRAYED
     END
 
-    POPUP "&?"
+    POPUP "&关于天远"
     BEGIN
         MENUITEM "Command Line Arguments...",      IDM_CMDLINEARGUMENTS
         MENUITEM SEPARATOR
@@ -1296,13 +1296,15 @@ BEGIN
     END
 END
 
-IDD_ABOUTBOX DIALOGEX 0, 0, 270, 240
+IDD_ABOUTBOX DIALOGEX 0, 0, 270, 255
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
 FONT 8, TEXT("MS Shell Dlg"), 0, 0, 0x1
 BEGIN
     EDITTEXT        IDC_BUILD_DATETIME,150,2,150,10, ES_READONLY | NOT WS_BORDER
     CONTROL         "", IDI_NPPABOUT_LOGO,"Static",SS_OWNERDRAW,10,5,128,128
     LTEXT           NOTEPAD_PLUS_VERSION, IDC_STATIC,85,25,140,11
+	LTEXT           "Build By 袁培荣 天远", IDC_STATIC,85,40,140,11
+	LTEXT           "版权所有(C) 2010-2024 YuanPeirong", IDC_STATIC,85,55,140,11
     LTEXT           "bit",IDC_VERSION_BIT,160,25,140,11
     //LTEXT           "Author :",IDC_STATIC,21,45,31,8
     //LTEXT           "FREE UYGHUR",IDC_AUTHOR_NAME,70,32,70,8
@@ -1317,12 +1319,12 @@ BEGIN
     //LTEXT           "I want to get a refund",IDC_HOME_ADDR,85,48,126,8
     //LTEXT           "20th-Year Anniversary",IDC_AUTHOR_NAME,85,38,100,8
     //LTEXT           "The short story",IDC_HOME_ADDR,85,48,126,10
-    LTEXT           "Home:",IDC_STATIC,21,58,47,8
-    LTEXT           "https://notepad-plus-plus.org/",IDC_HOME_ADDR,50,56,126,10
-    GROUPBOX        "GNU General Public Licence",IDC_STATIC,20,75,230,138,BS_CENTER
-    DEFPUSHBUTTON   "OK",IDOK,110,220,50,14
+    LTEXT           "Home:",IDC_STATIC,21,73,47,8
+    LTEXT           "http://www.yuanpeirong.com/",IDC_HOME_ADDR,50,71,126,10
+    GROUPBOX        "GNU General Public Licence",IDC_STATIC,20,90,230,138,BS_CENTER
+    DEFPUSHBUTTON   "OK",IDOK,110,235,50,14
     // IDC_LICENCE_EDIT should be the last line, don't know why
-    EDITTEXT        IDC_LICENCE_EDIT,30,93,210,117,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_LICENCE_EDIT,30,108,210,117,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER
 END
 
 IDD_DEBUGINFOBOX DIALOGEX 0, 0, 246, 195
